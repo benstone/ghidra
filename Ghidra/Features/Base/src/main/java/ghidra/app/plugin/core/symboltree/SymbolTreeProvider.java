@@ -213,6 +213,10 @@ public class SymbolTreeProvider extends ComponentProviderAdapter {
 			Integer.toString(createGroupIndex++));
 		DockingAction createClassAction = new CreateClassAction(plugin, createGroup,
 			Integer.toString(createGroupIndex++));
+		DockingAction createClassStructureAction = new CreateClassStructureAction(plugin, createGroup,
+				Integer.toString(createGroupIndex++));
+		DockingAction editClassStructureAction = new EditClassStructureAction(plugin, createGroup,
+				Integer.toString(createGroupIndex++));
 		DockingAction convertToClassAction = new ConvertToClassAction(plugin, createGroup,
 			Integer.toString(createGroupIndex++));
 
@@ -237,6 +241,8 @@ public class SymbolTreeProvider extends ComponentProviderAdapter {
 		tool.addLocalAction(this, createExternalLocationAction);
 		tool.addLocalAction(this, editExternalLocationAction);
 		tool.addLocalAction(this, createClassAction);
+		tool.addLocalAction(this, createClassStructureAction);
+		tool.addLocalAction(this, editClassStructureAction);
 		tool.addLocalAction(this, createNamespaceAction);
 		tool.addLocalAction(this, convertToClassAction);
 		tool.addLocalAction(this, renameAction);
