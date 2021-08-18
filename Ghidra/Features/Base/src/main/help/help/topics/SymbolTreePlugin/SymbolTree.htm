@@ -202,6 +202,25 @@
       <I>Class</I> node. All of the classes in the <I>Class</I> category are in the global
       namespace.</P>
     </BLOCKQUOTE>
+    
+    <H2><A name="Create_Class_Structure"></A>Create a Class Structure</H2>
+    
+    <BLOCKQUOTE>
+      <P>You can create a <I>structure</I> for a class to represent the layout of memory used by
+       instances of the class. The <B>Create Class Structure</B> option will create a new
+       structure with the same name as the class namespace. This structure will be
+       used by the decompiler when decompiling functions associated with the class namespace. If
+       the function uses the  <code class="code">__thiscall</code> calling convention, the
+       decompiler will use this structure to display class member variables. You can also
+       manually create this structure using the Data Type Manager.</P>
+       
+       <P>If a structure with the same name as the class already exists, you can use the
+       <B>Edit Class Structure</B> option to open the structure in the Structure Editor.</P>
+       
+       <P>Note: the class namespace and the class structure are not synchronized. If you rename
+       the class namespace you will also need to rename the class structure so that the decompiler
+       can find it.</P>
+    </BLOCKQUOTE>
 
     <H2><A name="Create_Namespace"></A>Create a Namespace</H2>
 
